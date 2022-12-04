@@ -4,15 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #24252A;
-}
-
-li, a, header h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #EDF0F1;
-    text-decoration: none;
+    background-color: #ffffff;
 }
 
 header {
@@ -20,10 +12,44 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+
 }
 
+body {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
 
-.nav_links{
+/* for all pages */
+body footer,
+body footer p,
+body footer p a {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+li,
+a,
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #EDF0F1;
+    text-decoration: none;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
+
+.navbar {
+    background-color: black;
+}
+
+.nav_links {
     list-style: none;
 }
 
@@ -32,14 +58,28 @@ header {
     padding: 0px 20px;
 }
 
-.nav_links li a {
+.nav_links li a,
+.nav_links a {
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover {
-    color: #0088A9;
+.nav_links li a:hover,
+.nav_links a:hover {
+    color: #949494;
 }
 
-body {
-    background-color: #FFFFFF;
+#lifting_title {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 15px;
 }
+
+.lifting_info,
+.lifting_info h2{
+    color: black;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
