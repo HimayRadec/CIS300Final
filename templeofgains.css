@@ -161,7 +161,8 @@ a:is(:link, :active, :visited).active {
     transition: 0.3s linear;
 }
 
-.submitButton:active {
+.submitButton:active,
+.header a:active {
     background-color: #000000;
     color: white;
     transition: 0.3s linear;
@@ -187,6 +188,11 @@ a:is(:link, :active, :visited).active {
     border-radius: 25px;
     border: solid 5px;
     margin: 20px auto;
+}
+
+.header a {
+    color: #000000;
+    font-size: 1.2em;
 }
 
 #CommonSupplements {
