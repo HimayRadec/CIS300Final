@@ -70,9 +70,11 @@ table, th, td {
     margin: 0;
 }
 
+/* did not work lol */
 a:is(:link, :active, :visited).active {
-    color: black;
-    background-color: white;
+    color: red;
+    background-color: red;
+    text-decoration: line-through;
 }
 
 .nav_links li a:hover,
@@ -91,6 +93,16 @@ a:is(:link, :active, :visited).active {
     padding: 5px;
 }
 
+#button {
+    padding: 10px;
+    border: solid 3px;
+    border-radius: 20px;
+    border-color: #FFFFFF;
+}
+#button a:hover {
+    color: #949494;
+    transition: all 0.3s ease 0s;
+}
 
 #videoWithText {
     display: flex;
