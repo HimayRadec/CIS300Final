@@ -40,30 +40,27 @@
             <a href="consultation.html">Free Consultation</a>
         </div>
     </header>
-    <h3>Get A Free Workout Plan Today!</h3>
-    <form method="post" action="https://webdevbasics.net/scripts/pacific.php">
-        <label for="myFName">*First Name</label>
-        <input type="text" id="myFName" name="myFName" required>
+    <div class="pageWrapperConsultation">
+        <h1 class="title">Get A Free Workout Plan Today!</h1>
+        <form class="form" method="post" action="/submitted.html">
+            <input placeholder="First Name" type="text" id="myFName" name="myFName" required>
 
-        <label for="myLName">*Last Name</label>
-        <input type="text" id="lname" name="lname" required>
+            <input placeholder="Last Name" type="text" id="lname" name="lname" required>
 
-        <label for="myEmail">*E-mail</label>
-        <input type="email" id="myEmail" name="myEmail" required>
+            <input placeholder="Email" type="email" id="myEmail" name="myEmail" required>
 
-        <label for="myPhone">Phone</label>
-        <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+            <input placeholder="Cell Phone" type="tel" id="myPhone" name="myPhone" maxlength="12">
 
-        <label for="myComments">*Comments</label>
-        <textarea id="myComments" name="myComments" rows="2" cols="30"></textarea>
+            <textarea placeholder="Comments" id="myComments" name="myComments" rows="2" cols="30"></textarea>
 
-        <input type="submit" value="submit">
-    </form>
+            <input class= "submitButton" type="submit" value="SUBMIT">
+    </div>
+
     <footer>
         <p> Designed by Himay Huerta</p>
         <p><a href="mailto:jhuert11@asu.edu">jhuert11@asu.edu</a></p>
     </footer>
-
+    </div>
 </body>
 
 </html>
