@@ -224,10 +224,14 @@ a:is(:link, :active, :visited).active {
 .SupplementInfo iframe {
     margin-top: 10px;
     width: 95%;
-    height: 95%;
     border: 10px solid rgb(0, 0, 0);
     border-radius: 50px;
 }
+
+.SupplementInfo div iframe {
+    height: 500px;
+}
+
 
 .sleepingVideo {
     height: 80vh;

@@ -8,106 +8,104 @@
     <meta name="keywords" content="Lifting, Nutrition, Gym, Sleep">
     <script defer src="activePage.js"></script>
     <title>
-        Temple Of Gains
+        Temple Of Gains | Home
     </title>
 </head>
 
-<body>
-    <header class="navbar">
-        <h1 class="nav_links">
-            <a href="index.html">TEMPLE OF GAINS</a>
-        </h1>
-        <nav>
-            <ul class="nav_links">
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/supplements.html">Supplements</a>
-                </li>
-                <li>
-                    <a href="/lifting.html">Lifting</a>
-                </li>
-                <li>
-                    <a href="/nutrition.html">Nutrition</a>
-                </li>
-                <li>
-                    <a href="/sleep.html">Sleep</a>
-                </li>
-                <li>
-                    <a href="/muscleGroups.html"> Muscle Groups</a>
-                </li>
-            </ul>
-        </nav>
-        <div id="button">
-            <a href="consultation.html">Free Consultation</a>
-        </div>
-    </header>
-    <div id="videoWithText">
+<header class="navbar">
+    <h1 class="nav_links">
+        <a href="index.html">TEMPLE OF GAINS</a>
+    </h1>
+    <nav>
+        <ul class="nav_links">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/supplements.html">Supplements</a>
+            </li>
+            <li>
+                <a href="/lifting.html">Lifting</a>
+            </li>
+            <li>
+                <a href="/nutrition.html">Nutrition</a>
+            </li>
+            <li>
+                <a href="/sleep.html">Sleep</a>
+            </li>
+            <li>
+                <a href="/muscleGroups.html"> Muscle Groups</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="button">
+        <a href="consultation.html">Free Consultation</a>
+    </div>
+</header>
+<div id="videoWithText">
 
-        <video onloadstart="this.volume=0.2" id="introVideo" autoplay>
-            <source src="content/CinematicVideo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <video onloadstart="this.volume=0.2" id="introVideo" autoplay>
+        <source src="content/CinematicVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-        <div id="videoText">
-            <h1 id="videoTextUpper">IT TAKES 66 DAYS TO FORM A HABIT.</h1>
-            <h1 id="videoTextLower">MAKE IT A GOOD ONE.</h1>
-        </div>
-
-
+    <div id="videoText">
+        <h1 id="videoTextUpper">IT TAKES 66 DAYS TO FORM A HABIT.</h1>
+        <h1 id="videoTextLower">MAKE IT A GOOD ONE.</h1>
     </div>
 
-    <footer id="mainFooter">
-        <p> Designed by Himay Huerta</p>
-        <p><a href="mailto:jhuert11@asu.edu">jhuert11@asu.edu</a></p>
-    </footer>
 
-    <script>
-        var vid = document.getElementById('introVideo')
-        vid.muted = false;
+</div>
 
-        document.getElementById('introVideo').addEventListener('play', hideText());
+<footer id="mainFooter">
+    <p> Designed by Himay Huerta</p>
+    <p><a href="mailto:jhuert11@asu.edu">jhuert11@asu.edu</a></p>
+</footer>
 
-        document.getElementById('videoWithText').addEventListener('click', () => {
-            toggleMute();
-        });
+<script>
+    var vid = document.getElementById('introVideo')
+    vid.muted = false;
 
-        document.getElementById('introVideo').addEventListener('ended', () => {
-            displayText();
-            delayPlay();
-        });
+    document.getElementById('introVideo').addEventListener('play', hideText());
 
-        function toggleMute() {
-            vid.muted = !vid.muted;
-        }
+    document.getElementById('videoWithText').addEventListener('click', () => {
+        toggleMute();
+    });
 
-        function displayText() {
-            videoTextUpper.style.opacity = '1';
-            videoTextUpper.style.transition = "opacity 2s linear";
+    document.getElementById('introVideo').addEventListener('ended', () => {
+        displayText();
+        delayPlay();
+    });
 
-            setTimeout(function () {
-                videoTextLower.style.opacity = '1';
-                videoTextLower.style.transition = "opacity 2s linear";
-            }, 2500)
-        }
+    function toggleMute() {
+        vid.muted = !vid.muted;
+    }
 
-        function delayPlay() {
-            setTimeout(function () {
-                document.getElementById('introVideo').play();
-                hideText();
-                vid.muted = true;
-            }, 12000);
-        }
+    function displayText() {
+        videoTextUpper.style.opacity = '1';
+        videoTextUpper.style.transition = "opacity 2s linear";
 
-        function hideText() {
-            videoTextUpper.style.opacity = '0';
-            videoTextLower.style.opacity = '0';
-            videoTextUpper.style.transition = "opacity 0s linear";
-            videoTextLower.style.transition = "opacity 0s linear";
-        }
+        setTimeout(function () {
+            videoTextLower.style.opacity = '1';
+            videoTextLower.style.transition = "opacity 2s linear";
+        }, 2500)
+    }
 
-    </script>
-</body>
+    function delayPlay() {
+        setTimeout(function () {
+            document.getElementById('introVideo').play();
+            hideText();
+            vid.muted = true;
+        }, 12000);
+    }
+
+    function hideText() {
+        videoTextUpper.style.opacity = '0';
+        videoTextLower.style.opacity = '0';
+        videoTextUpper.style.transition = "opacity 0s linear";
+        videoTextLower.style.transition = "opacity 0s linear";
+    }
+
+</script>
 
 </html>
